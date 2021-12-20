@@ -51,6 +51,7 @@ app.get("/coupons", async (req, res) => {
   console.log(coupons);
   return res.send(coupons);
 });
+app.use(express.json());
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
